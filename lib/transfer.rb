@@ -43,6 +43,6 @@ class Transfer
      @status = reveresed
    end
  end
- end
+
  
 end
