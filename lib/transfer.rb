@@ -19,9 +19,13 @@ class Transfer
    send_stat = @sender.status
    receiver_stat = @receiver.status 
    
- if sender_bal 
+ if sender_bal > 0 && send_stat == "open"
+   true 
+ else
+   false 
  end
    
+  end
    
    
    
