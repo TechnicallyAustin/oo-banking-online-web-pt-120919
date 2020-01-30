@@ -25,6 +25,7 @@ class Transfer
  end
    
  def execute_transaction (sender,receiver,amount)
+   
      if sender.valid? && receiver.valid?
      sender.balance -= amount
      receiver.balance += amount
@@ -33,7 +34,6 @@ class Transfer
         @status = "rejected"
      p "Transaction rejected. Please check your account balance."
    end
- end
  end
  
  def reverse_transfer(sender,receiver,amount)
