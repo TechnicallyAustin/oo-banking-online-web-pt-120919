@@ -47,7 +47,7 @@ end
     if @status == "complete"
       sender.balance += @amount
       receiver.balance -= @amount
-      self.status = "pending"
+      self.status = "reversed"
     end
   end
   
