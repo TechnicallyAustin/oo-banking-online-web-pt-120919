@@ -19,10 +19,11 @@ class Transfer
    send_stat = @sender.status
    receiver_stat = @receiver.status 
    
- if @sender.valid? && @receiver.valid? 
-   true 
-   end
+ if sender_bal 
  end
+   
+   
+   
    
  def execute_transaction (sender,receiver,amount)
      if sender.balance > amount && status == "pending"
