@@ -27,12 +27,12 @@ class Transfer
    
    
    
- def execute_transaction (sender,receiver,amount)
+ def execute_transaction
   if valid?
-    sender.balance -= amount
-    receiver.balance += amount 
+    sender.balance -= @amount
+    receiver.balance += @amount 
     @status == "completed"
-  elsif sender.balance < amount 
+  elsif sender.balance < @amount 
   @status = "rejected"
 end
 end
