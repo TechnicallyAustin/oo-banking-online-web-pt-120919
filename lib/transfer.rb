@@ -19,7 +19,7 @@ class Transfer
    send_stat = @sender.status
    receiver_stat = @receiver.status 
    
- if sender.valid > 0 && send_stat == "open"
+ if sender.valid?
    true 
  else
    false 
