@@ -19,7 +19,7 @@ class Transfer
    send_stat = @sender.status
    receiver_stat = @receiver.status 
    
- if sender.valid?
+ if sender.valid? $$ receiver.valid?
    true 
  else
    false 
