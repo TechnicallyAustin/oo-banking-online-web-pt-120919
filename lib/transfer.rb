@@ -34,6 +34,7 @@ class Transfer
     @status == "complete"
   elsif sender.balance < @amount 
   @status = "rejected"
+  binding.pry
 end
 end
  
